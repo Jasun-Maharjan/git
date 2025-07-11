@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="../CSS/Style.css" />
+
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta name="description" content="Home Page">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Ellie Shrestha">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!--Internal CSS-->
+<style>
+  body {
+    background: #303a5e;
+    font-family: sans-serif;
+    color: #fff;
+  }
+
+  .beginning {
+    margin-top: 70px;
+    width: 100%;
+    height: 1000px
+  }
+
+  .beginning .text {
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    top: 625px;
+    left: 20px;
+  }
+
+  .text .learn {
+    font-size: 28px;
+    margin-top: 40px;
+    background: #000;
+    border: 1px solid white;
+    padding: 18px;
+    border-radius: 14px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .text .learn a {
+    color: white;
+    border: white;
+  }
+
+  .text .learn:hover {
+    background-color: white;
+    color: black;
+  }
+  .text .learn a:hover {
+    color: black;
+  }
+
+
+  /* Reviews Section */
+  .review {
+    text-align: center;
+    border-bottom: 1px solid white;
+    width:80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .row img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .feature-box {
+    background-color: rgba(17, 2, 2, 0.5);
+    /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+  }
+  .feature-box a{
+    color:#fff;
+    transition: all 0.3s;
+  }
+  .feature-box a:hover{
+    color:#666;
+  }
+  .feature-box a:active{
+    color:#333;
+  }
+
+  .seemore {
+    border: 1px solid white;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s ease;
+  }
+  .seemore:hover{
+    color:black;
+    transform: scale(1.1);
+  }
+  .seemore a {
+    color: white;
+  }
+
+  .seemore a:hover {
+    color: black;
+  }
+
+  .seemore:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+  /*middle*/
+  .middle {
+    background-color: #e3f2fd;
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    height: 500px;
+  }
+
+  .middle .button {
+    border: 3px solid #303a5e;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s ease;
+    font-size: 24px;
+    background-color: #5d6b95;
+  }
+
+  .middle .button a {
+    color: #fff;
+  }
+
+  .middle .button:hover {
+    background-color: #303a5e;
+    transform: scale(1.2);
+  }
+
+  /*overview*/
+  .overview {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .overview .img {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .overview .img img {
+    padding-right: 25px;
+  }
+</style>
+
+<body>
+  <nav>
+    <!--The Logo-->
+    <div class="logo">
+      <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon" />
+      <img class="img" src="../norbu.jpg" alt="logo" />
+      <span class="logoName">Norbu Watches</span>
+    </div>
+
+    <!--SearchBox-->
+    <div>
+      <form>
+        <div class="search">
+          <img src="../icons/search-regular-24.png" alt="search" />
+          <input class="search-input" type="search" placeholder="Search items" />
+        </div>
+      </form>
+    </div>
+
+    <!--SideBar-->
+    <!--Normally it is not seen, but when the menu btn is clicked, the sidebar reveals 
+    itself in the left side of the screen-->
+    <div class="sidebar">
+      <div class="logo">
+        <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon" />
+        <img class="img" src="../norbu.jpg" alt="logo" />
+        <span class="logoName">Norbu Watches</span>
+      </div>
+
+      <div class="contents">
+        <ul class="lists">
+          <li class="items">
+            <a href="../html/homme.html" class="nav-link">
+              <img src="../icons/home-regular-24.png" class="icons" alt="home">
+              <span class="link">Home</span>
+            </a>
+          </li>
+          <li class="items">
+            <a href="../html/Research.html" class="nav-link">
+              <img src="../icons/search-alt-regular-24.png" class="icons" alt="user" />
+              <span class="link">Research</span>
+            </a>
+          </li>
+          <li class="items">
+            <a href="../html/Blog.html" class="nav-link">
+              <img src="../icons/chat-regular-24.png" class="icons" alt="blog" />
+              <span class="link">Blog</span>
+            </a>
+          </li>
+          <li class="items">
+            <a href="../html/product.html" class="nav-link">
+              <img src="../icons/shopping-bag-regular-24.png" class="icons" alt="products">
+              <span class="link">Products</span>
+            </a>
+          </li>
+          <li class="items">
+            <a href="../html/AboutUs.html" class="nav-link">
+              <img src="../icons/info-circle-regular-24.png" class="icons" alt="info" />
+              <span class="link">About Us</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <section class="overlay"></section>
+  <!--the overlay is basically the whole screen when the sidebar is open 
+  but the overlay doesn't include the sidebar-->
+
+  <div class="beginning">
+    <div class="banner">
+      <img src="../images/home/banner.gif" alt="banner" width="100%" height="800px">
+      <!--A gif is presented instead of a picture as a banner for the home page to 
+      make the customer more interested-->
+      <div class="text">
+        <p style="font-size: 40px;">Best Watches in Town</p>
+        <button class="learn"><a href="../html/product.html">Shop Now</a></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Featured products-->
+  <section class="review">
+    <p style="font-size: 32px;font-weight: bold;">Featured Products</p><br><br>
+    <div class="row">
+
+      <div class="feature-box">
+
+        <div class="feature-img">
+          <img src="../images/Home/watch8.png" alt="picture">
+        </div>
+        <a href="description.html">
+          <div class="feature-text">
+            <h3>
+              Day-Date 40
+            </h3>
+            <p>The Oyster Perpetual Day-Date 40 in 18 ct yellow gold with a green dial,
+              fluted bezel and a President bracelet.Gold is coveted for its lustre and nobility.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-img">
+          <img src="../images/home/watch4.png" alt="picture">
+        </div>
+        <a href="description2.html">
+          <div class="feature-text">
+            <h3>
+              Datejust 41
+            </h3>
+
+            <p>This Oyster Perpetual Datejust 41 in Oystersteel and white gold features a bright blue dial and an Oyster
+              bracelet.
+              Oyster architecture: Monobloc middle case, screw-down case back and winding crown</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="feature-box">
+        <div class="feature-img">
+          <img src="../images/Home/watch9.png" alt="picture">
+        </div>
+        <a href="description3.html">
+          <div class="feature-text">
+            <h3>
+              Datejust 40
+            </h3>
+            <p>Water-resistance: Waterproof to 100 metres / 330 feet <br>
+              Bezel: Fluted <br>
+              Dial: Slate set with diamonds</p>
+          </div>
+        </a>
+      </div>
+
+    </div><br><br>
+    <div class="seemore">
+      <a href="product.html">Shop More</a>
+      <!--A button for if the customer is insterested, it takes them to the product page-->
+    </div><br><br>
+
+  </section>
+
+  
+
+
+  <!--Overview of all the pages-->
+  <div class="overview">
+    <div class="product">
+      <p style="text-align: center;font-size:40px;font-weight:bold;">Overview of our webpages:-</p><br>
+      <p style="text-align: center;font-size:24px;">
+        A sample presentation of all the pages created by our team with a little of information about them.
+      </p><br><br>
+      <table>
+        <tr>
+          <td style="width:50%;">
+            <a href="product.html">
+              <img src="../images/Home/Product page.jpg" alt="img" style="width:700px;padding-right:25px;">
+            </a>
+          </td>
+          <td style="width:50%">
+            <p style="font-size: 24px;"><b>Product page:</b><br>
+              This page presents all the products with their information for the customers to buy.
+              It has a variety of watches suitable for men and women of any age group.
+              It has a user friendly interface to help customers navigate through their store and find the product they
+              desire.
+            </p>
+          </td>
+        </tr>
+      </table><br><br>
+
+      <table>
+        <tr>
+          <td style="width:50%">
+            <p style="font-size: 24px;"><b>Blog Page:</b><br>
+              This page has articles/blogs to keep the customers updated on ongoing watch trends and topics.
+              It presents the customers with various blogs related to watches.
+              It mostly takes the customers to an external site but there are also blogs that the website creators have
+              made
+              to help customers know the latest trends.
+            </p>
+          </td>
+          <td style="width:50%">
+            <a href="Blog.html"><img src="../images/Home/Blog.png" alt="img" style="width:700px;padding-left:25px"></a>
+          </td>
+
+        </tr>
+      </table><br><br>
+
+      <table>
+        <tr>
+          <td style="width:50%">
+            <a href="AboutUs.html">
+              <img src="../images/Home/AboutUs1.png" alt="img" style="width:700px;padding-right:25px">
+            </a>
+          </td>
+          <td style="width:50%">
+            <p style="font-size: 24px;"><b>About us page:</b><br>
+              This page has information about Norbu watches to help customers get familiar with us.
+              It also has a form for any queries and feedback a customer might have.
+            </p>
+          </td>
+        </tr>
+      </table><br><br>
+
+      <table>
+        <tr>
+          <td style="width:50%">
+            <p style="font-size: 24px;"><b>Research page:</b><br>
+              This page presents the viewers with a sample picture of all of our website and also the references that we took
+              to make the website. It has all the feature presented in our website with their respective references.
+            </p>
+          </td>
+          <td style="width:50%">
+            <a href="Research.html"><img src="../images/Home/Research.png" alt="img" style="width:700px;padding-left:25px"></a>
+          </td>
+    
+        </tr>
+      </table>
+    </div>
+  </div><br><br>
+
+  <!--About us section-->
+  <div class="middle">
+    <div class="img" style="margin:30px;flex:50%">
+      <img src="../images/Home/about.png"
+        width="500" style="margin-left: 15%;">
+    </div>
+    <div class="text"
+      style="margin-top:auto;margin-bottom: auto;flex:50%;margin-right: 50px;">
+      <p style="color:#303a5e;font-size: 60px; font-weight: bold  ;text-align: center;">Learn About Us</p>
+      <p style="color:#303a5e;font-size:32px;text-align: center;">Our team consists of passionate team members that want to 
+        serve their customers with the best comfort and satisfaction they can offer.
+      </p><br><br>
+      <div class="button">
+        <a href="AboutUs.html">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <div class="footer-section">
+      <div class="footer-about">
+        <h3>Norbu Watches</h3>
+        <p>Norbu, which means gems in tibetan language, tries the best to offer their customers and investors the best
+          quality and comfort in terms of investing, options and shopping. </p>
+      </div>
+      <div class="footer-links">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="../icons/instagram-logo-24.png" class="icons" alt="logo">
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              <img src="../icons/facebook-circle-logo-24.png" class="icons" alt="logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../icons/whatsapp-square-logo-24.png" class="icons" alt="logo">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../icons/youtube-logo-24.png" class="icons" alt="logo">
+            </a>
+          </li>
+
+        </ul>
+        <br /><br />
+        <h3>Contact Us</h3>
+        <p>Phone number:+977 000-0000000</p>
+        <p>Email:CustomerService@gmail.com</p>
+      </div>
+      <div class="footer-contact">
+        <h3>Email Sign Up</h3>
+        <p>Sign up for early access to new collections and special sales</p>
+        <form onsubmit="form()">
+          <div class="submit">
+            <input class="EmailSubmit" id="email" type="text" placeholder="Email Address" />
+            <button class="button">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">COPYRIGHT &copy; 2025 GROUP LTD.</div>
+  </div>
+
+  <!--Linking Javascript-->
+  <script src="../JS/myscript.js"></script>
+</body>
+
+<html>

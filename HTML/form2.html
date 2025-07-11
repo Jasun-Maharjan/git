@@ -1,0 +1,294 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title></title>
+    Form
+    </title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/Style.css">
+
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Feedback Form">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+
+        body {
+            background-color: #303a5e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 10px;
+            margin: -20px 0 50px;
+        }
+
+        .container {
+            background-color: #fff;
+            margin-top: 10%;
+            display: flex;
+            max-width: 100%;
+            max-height: 480px;
+            min-width: 370px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .formTopic {
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            background-color: #555;
+            flex: 50%;
+            width: 50%;
+            text-align: center;
+            height: 480px;
+        }
+
+        .formTopic h3 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .formTopic p {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .formTopic .detail {
+            margin: 14px;
+            text-align: center;
+        }
+
+        .detail i {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .topic {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .detail .text {
+            font-size: 16px;
+            font-weight: 300;
+            color: #fff;
+        }
+
+        .required {
+            text-align: left;
+        }
+
+        .form .required p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .form {
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            text-align: center;
+            height: 480px;
+        }
+
+        .form p {
+            font-size: 24px;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+
+        .form input {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .form input::placeholder {
+            color: #fff;
+        }
+
+        input:focus {
+            outline: 1px solid #000;
+        }
+
+        .form textarea {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+            font-size: 16px;
+            height: 150px;
+        }
+
+        .form textarea::placeholder {
+            color: #fff;
+        }
+
+        textarea:focus {
+            outline: 1px solid #000;
+        }
+
+        button {
+            border-radius: 20px;
+            background-color: #555;
+            color: #FFFFFF;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            text-transform: uppercase;
+            transition: all 80ms ease-in;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!--The Logo-->
+        <div class="logo">
+            <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+            <img class="img" src="../norbu.jpg" alt="logo">
+            <span class="logoName">Norbu Watches</span>
+        </div>
+
+        <!--SearchBox-->
+        <div>
+            <form>
+                <div class="search">
+                    <img src="../icons/search-regular-24.png" alt="search">
+                    <input class="search-input" type="search" placeholder="Search items">
+                </div>
+            </form>
+        </div>
+
+
+        <!--SideBar-->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+                <span class="logoName">Norbu Watches</span>
+            </div>
+
+            <div class="contents">
+                <ul class="lists">
+                    <li class="items">
+                        <a href="../home.html" class="nav-link">
+                            <img src="../icons/home-regular-24.png" class="icons" alt="home">
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/Research.html" class="nav-link">
+                            <img src="../icons/search-alt-regular-24.png" class="icons" alt="user">
+                            <span class="link">Research</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/Blog.html" class="nav-link">
+                            <img src="../icons/chat-regular-24.png" class="icons" alt="blog">
+                            <span class="link">Blog</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/product.html" class="nav-link">
+                            <img src="../icons/shopping-bag-regular-24.png" class="icons" alt="products">
+                            <span class="link">Products</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/AboutUs.html" class="nav-link">
+                            <img src="../icons/info-circle-regular-24.png" class="icons" alt="info">
+                            <span class="link">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+
+               
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    <!--Form-->
+    <div class="container" id="form">
+        <!--Left side of the form-->
+        <div class="formTopic">
+            <h3>Any Queries</h3><br><br>
+            <p>Feel free to contact us with the contact info given below or the form right next to it.</p><br>
+            <div class="address detail">
+
+                <div class="topic">Location</div>
+                <div class="text">Kathmandu,Nepal</div>
+            </div>
+            <div class="phone detail">
+
+                <div class="topic">Phone</div>
+                <div class="text">+977 000 000000</div>
+                <div class="text">+977 000 000000</div>
+            </div>
+            <div class="email detail">
+
+                <div class="topic">Email</div>
+                <div class="text">CustomerService@gmail.com</div>
+                <div class="text">CustomerService@gmail.com</div>
+            </div>
+        </div>
+
+        <!--Right side of the form-->
+        <div class="form">
+            <p>CONTACT US</p>
+            <div class="required">
+                <p>* Required</p>
+            </div>
+
+            <form onsubmit="validateForm()">
+            <!--Calling function when the user click submit button-->
+                <input type="text" placeholder="Full name*" id="Name" required><br>
+                <input type="text" placeholder="Email*" id="Email" required><br>
+                <input type="text" placeholder="Phone Number" id="Phone"><br>
+                <textarea rows="4" placeholder="Feedback*" id="Message" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--JS to validate form-->
+    <script>
+        function validateForm() {
+            var a = document.getElementById("Name").value;
+            var b = document.getElementById("Email").value;
+            var c = document.getElementById("Phone").value;
+            var d = document.getElementById("Message").value;
+            //these commands take all the input from the text boxes in the form
+
+            if (a == "" || b == "" || d == "") {
+                alert("Please fill out all the required fields.");
+            }
+            else {
+                alert("Thank you for your feedback");
+            }
+            //if-else is kept to make sure that the required input are given by the user, otherwise it refuses to take the form
+        }
+    </script>
+    <script src="../JS/myscript.js"></script>
+</body>
+
+</html>

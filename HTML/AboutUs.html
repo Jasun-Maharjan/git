@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/Style.css">
+
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="About us">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Internal CSS-->
+    <style>
+        .AbtUs {
+            margin: 7.5% 5% 7.5%;
+            justify-content: center;
+            display: flex;
+            padding: 40px;
+            width: 90%;
+            border-bottom: 1px solid #000;
+        }
+
+        .AbtUs h1 {
+            color: #555;
+            font-weight: bolder;
+            text-align: left;
+        }
+
+        .card {
+            transition: all 0.4s;
+            height: 400px;
+        }
+
+
+        .card a {
+            background-color: #000;
+            color: #fff;
+            border-radius: 10px;
+            padding: 12px 12px;
+            margin-bottom: 10px;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+
+        .card a:hover {
+            background-color: white;
+            color: #000;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .Learnbtn {
+            margin-bottom: 10px;
+            font-size: 18px;
+            border-radius: 20px;
+            background-color: #555;
+            color: #555;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 12px;
+            text-transform: uppercase;
+            transition: all 0.4s ease-in;
+        }
+
+        .Learnbtn:hover {
+            opacity: 0.7;
+        }
+
+
+        .contactus {
+            margin-top: 60px;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            width: 500px;
+            margin-bottom: 60px;
+            text-align: center;
+            border: 1px solid #555;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+        }
+
+        .feedback {
+            background-color: #303a5e;
+            height: 700px;
+            display: flex;
+
+        }
+
+        .feedback .text {
+            margin: 50px;
+            width: 40%;
+            text-align: left;
+            padding-top: 100px;
+            color: beige;
+        }
+
+        .feedbtn {
+            font-size: 28px;
+            margin-top: 40px;
+            background: #555;
+            color: beige;
+            border: none;
+            padding: 12px 12px;
+            border-radius: 14px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .feedbtn a {
+            background: #555;
+            color: beige;
+            transition: all 0.5s;
+        }
+
+        .feedbtn a:hover {
+            background-color: #fff;
+            color: #555;
+        }
+
+        .feedbtn:hover {
+            background-color: #fff;
+            color: #555;
+
+        }
+
+        .feedback .image {
+            justify-content: center;
+            align-items: center;
+            margin-top: 2.5%;
+        }
+
+
+        .image img {
+            width: 800px;
+            height: auto;
+        }
+
+        .abtpic {
+            margin-top: 70px;
+            width: 100%;
+            position: relative;
+
+        }
+
+        .abtpic img {
+            width: 100%;
+            height: 800px;
+        }
+
+        .top .line {
+            position: absolute;
+            text-align: center;
+            padding: 20px;
+            top: 300px;
+            right: 20px;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <!--The Logo-->
+        <div class="logo">
+            <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+            <img class="img" src="../norbu.jpg" alt="logo">
+            <span class="logoName">Norbu Watches</span>
+        </div>
+
+        <!--SearchBox-->
+        <div>
+            <form>
+                <div class="search">
+                    <img src="../icons/search-regular-24.png" alt="search">
+                    <input class="search-input" type="search" placeholder="Search items">
+                </div>
+            </form>
+        </div>
+
+
+        <!--SideBar-->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+                <img class="img" src="../norbu.jpg" alt="logo" />
+                <span class="logoName">Norbu Watches</span>
+            </div>
+
+            <div class="contents">
+                <ul class="lists">
+                    <li class="items">
+                        <a href="../home.html" class="nav-link">
+                            <img src="../icons/home-regular-24.png" class="icons" alt="home">
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/Research.html" class="nav-link">
+                            <img src="../icons/search-alt-regular-24.png" class="icons" alt="user">
+                            <span class="link">Research</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/Blog.html" class="nav-link">
+                            <img src="../icons/chat-regular-24.png" class="icons" alt="blog">
+                            <span class="link">Blog</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/product.html" class="nav-link">
+                            <img src="../icons/shopping-bag-regular-24.png" class="icons" alt="products">
+                            <span class="link">Products</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/AboutUs.html" class="nav-link">
+                            <img src="../icons/info-circle-regular-24.png" class="icons" alt="info">
+                            <span class="link">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="overlay"></section>
+    <!--the overlay is basically the whole screen when the sidebar is open 
+    but the overlay doesn't include the sidebar-->
+
+    <!--BANNER-->
+    <div class="top">
+        <div class="abtpic">
+            <img src="../images/About Us/banner-home (1).jpg" alt="banner">
+            <div class="line">
+                <p style="font-size:60px;font-weight:bold;color:beige;">About Norbu</p><br>
+            </div>
+        </div>
+    </div>
+
+    <!--Introduction for our e-commerce company-->
+    <div class="AbtUs" id="AbtUs">
+        <div class="topic" style="width: 40%;padding-right:40px;">
+            <h1>For the luxury and the best simplicity</h1>
+        </div>
+        <div class="mainInfo" style="width:60%;">
+            <p style="font-size: 24px;text-align: left; font-weight: bold;">
+                Norbu is a watch e-commerce website that offers luxurious and grand watches to its customer.
+                We provide great customer satisfaction and easy purchases.
+            </p><br><br>
+            <p style="font-size: 24px;text-align: left;">
+                Norbu, which means gems in tibetan language, tries the best to offer their customers and investors the
+                best quality and comfort in terms of investing, options and shopping.
+                It thrives to offer beautiful watches to their customers in return for their satisfaction.
+                It wants their customers to shop in their website with a smile on their faces and always wants to meet
+                up with their expectations.
+                Their customers drive them further to develop their website and offer more to their customers.
+            </p>
+        </div>
+    </div>
+
+    <!--Introduction to our members and also a link to their CV-->
+    <div class="members" style=" justify-content: center;align-items: center;">
+        <h1 style="text-align: center; font-weight: bold;color:#555;padding-bottom: 20px;font-size: 40px;">Our Members
+            and their contributions</h1><br>
+        <p
+            style="text-align:center; font-weight:400;font-size:18px;width:60%;margin-left:20%;padding-bottom: 20px; font-size: 24px;">
+            We, at Norbu, are thankful for all of our members who have helped built this website and will always be
+            grateful for the work and time they put in it.
+            Without our members, Norbu would not exist today. <br> <b>Thank you to all of our members.</b>
+        </p><br><br>
+
+        <!--Member cards-->
+        <div class="membersCards" style="display:flex; justify-content: center;align-items: center;margin-top: 20px;">
+
+            <div class="card"
+                style="width:250px;background-color: #fff;border-radius: 10px;overflow: hidden;margin-left:50px;">
+                <div class="Photo" style="padding:14px;margin:0;padding:0;">
+                    <img src="../images/About Us/Safiyah.jpg" alt="image" style="width:250px;">
+                </div>
+                <div class="description" style="text-align: center;">
+                    <p style="padding-top:10px;padding-bottom:6px;color:#000;font-size:20px;font-weight: bold;">Safiyah
+                        Malik
+                    </p><br>
+                    <p style="padding-bottom:10px;font-size:18px;color:#555;">Team Leader</p><br>
+                    <a href="../HTML/safiyah.html">Learn More</a>
+                </div>
+            </div>
+
+            <div class="card"
+                style="width:250px;background-color: #fff;border-radius: 10px;overflow: hidden;margin-left:50px;">
+                <div class="Photo" style="padding:14px;margin:0;padding:0;">
+                    <img src="../images/About Us/Jasun.jpg" alt="image" style="width:250px">
+                </div>
+                <div class="description" style="text-align: center;">
+                    <p style="padding-top:10px;padding-bottom:6px;color:#000;font-size:20px;font-weight: bold;">Jasun
+                        Maharjan</p><br>
+                    <p style="padding-bottom:10px;font-size:18px;color:#555;">Team Member</p><br>
+                    <a href="../CV/jasun.html">Learn more</a>
+                </div>
+            </div>
+
+            <div class="card"
+                style="width:250px;background-color: #fff;border-radius: 10px;overflow: hidden;margin-left:50px;">
+                <div class="Photo" style="padding:14px;margin:0;padding:0;">
+                    <img src="../images/About Us/Ellie.jpg" alt="image" style="width:250px">
+                </div>
+                <div class="description" style="text-align: center;">
+                    <p style="padding-top:10px;padding-bottom:6px;color:#000;font-size:20px;font-weight: bold;">Ellie
+                        Shrestha</p><br>
+                    <p style="padding-bottom:10px;font-size:18px;color:#555;">Team Member</p><br>
+                    <a href="../HTML/ellie.html">Learn more</a>
+                </div>
+            </div>
+
+            <div class="card"
+                style="width:250px;background-color: #fff;border-radius: 10px;overflow: hidden;margin-left:50px;">
+                <div class="Photo" style="padding:14px;margin:0;padding:0;">
+                    <img src="../images/About Us/Manish.png" alt="image" style="width:250px">
+                </div>
+                <div class="description" style="text-align: center;">
+                    <p style="padding-top:10px;padding-bottom:6px;color:#000;font-size:20px;font-weight: bold;">Manish
+                        Mandal</p><br>
+                    <p style="padding-bottom:10px;font-size:18px;color:#555;">Team Member</p><br>
+                    <a href="../Html/Manish.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--A section with our contact info-->
+    <div class="contactus">
+        <h2 style="font-size:40px;font-weight:600">CONTACT US</h2>
+        <p style="font-size: 24px;">Phone number:0000000000000 |</p>
+        <p style="font-size:24px">CUSTOMERSERVICE@gmail.com</p><br>
+    </div>
+    <div class="feedback">
+        <div class="text">
+            <h2 style="font-size:40px;font-weight:800;color:aquamarine">Leave a feedback?</h2><br>
+            <p style="font-size: 24px;">If you have any queries, feel free to contact us through our contact info or
+                you can submit your feedback as a form below. Your feedback has great importance to us and our future
+                developments. Thank you!
+            </p>
+            <button class="feedbtn"><a href="../HTML/form2.html">Submit a form</a></button>
+        </div>
+        <div class="image">
+            <img src="../images/About Us/istockphoto-688306678-612x612.jpg" alt="feedback" style="border-radius: 16px;">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-section">
+            <div class="footer-about">
+                <h3>Norbu Watches</h3>
+                <p>Norbu, which means gems in tibetan language, tries the best to offer their customers and investors
+                    the best quality and comfort in terms of investing, options and shopping. </p>
+            </div>
+            <div class="footer-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/instagram-logo-24.png" class="icons" alt="logo">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/facebook-circle-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/whatsapp-square-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/youtube-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+
+                </ul>
+                <br><br><br>
+                <h3>Contact Us</h3>
+                <p>Phone number:+977 000-0000000</p>
+                <p>Email:CustomerService@gmail.com</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Email Sign Up</h3>
+                <p>Sign up for early access to new collections and special sales</p>
+                <form>
+                    <div class="submit">
+                        <input class="EmailSubmit" type="text" placeholder="Email Address" required>
+                        <button class="button">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            COPYRIGHT &copy; 2025 GROUP LTD.
+        </div>
+    </div>
+
+    <script src="../JS/myscript.js"></script>
+</body>
+
+<HTML>

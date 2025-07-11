@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Description Page</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <style>
+
+        /*Description Page*/
+        
+        
+        
+        #des{
+            display: flex;
+            
+        
+        }
+        
+        .details{
+            width: 60%;
+            height:40%;
+            margin-top: 170px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color:white;
+            background-color:black;
+            
+        
+        }
+        
+        #des .dimg{
+            width: 40%;
+            margin-right: 50px;
+        }
+        
+        #des .details{
+            
+            height: 50%;
+            padding-top:20px;
+        }
+        
+        #des .details h2{
+            padding: 20px 0 25px 0;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        
+        #des .details h5{
+            font-style: italic;
+            line-height: 20px;
+        }
+        
+        #des .details h4{
+            padding-top: 30px;
+            color: rgb(225, 120, 138)
+        }
+        
+        #des .details h3{
+            padding-top: 40px;
+            font-size: 25px;
+        }
+        
+        #des .details span{
+            color:grey;
+            padding-top: 20px;
+            line-height: 30px;
+        }
+        
+        
+        #des .details input{
+            width:50px;
+            height:45px;
+            padding-left:20px;
+            margin-right: 10px;
+            font-size:18px;
+        }
+        
+        button.work{
+            font-size: 15px;
+            font-weight:bold;
+            padding: 20px 40px; 
+            color:black;
+            background-color: white;
+            cursor: pointer;
+            border:none;
+            border-radius: 4px;
+            transition:0.5s;
+            outline:none;
+        }
+        
+        #des .details button{
+            background-color: rgb(252, 205, 213);
+            color:rgb(225, 120, 138)
+        }
+        
+        .pd .onclick{
+            transition-delay:  0.5s;
+        }
+        
+        /*discount description*/
+        
+        .details .d2 h4{
+            text-decoration: line-through;
+            opacity: 50%;
+        }
+        
+        .details .d2 h3{
+            color:rgb(225, 120, 138);
+        }
+        
+        /*popup*/
+        
+        .popup{
+            color:#060606;
+            background-color:rgb(252, 205, 213);
+            position:absolute;
+            border-radius: 5px;
+            height: 110px;
+            width: 180px;
+            text-align: center;
+            padding: 30px 10px 10px;
+            top:20%;
+            left: 50%;
+            transition: 0.3s;
+            visibility: hidden;
+        }
+        
+        .popup button{
+            
+            border:none;
+            color:rgb(225, 120, 138);
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute;
+            top:3px;
+            right:7px;
+        }
+        
+        .open-popup{
+            visibility: visible;
+            top: 75%;
+        }
+            </style>
+        </head>
+        <body>
+        
+            <nav>
+                <!--The Logo-->
+                <div class="logo">
+                    <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+                    <img class="img" src="../norbu.jpg" alt="logo">
+                    <span class="logoName">Norbu Watches</span>
+                </div>
+        
+                <!--SearchBox-->
+                <div>
+                    <form>
+                        <div class="search">
+                            <img src="../icons/search-regular-24.png" alt="search">
+                            <input class="search-input" type="search" placeholder="Search items">
+                        </div>
+                    </form>
+                </div>
+        
+        
+                <!--SideBar-->
+                <div class="sidebar">
+                    <div class="logo">
+                        <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+                    <img class="img" src="../norbu.jpg" alt="logo">
+                    <span class="logoName">Norbu Watches</span>
+                    </div>
+        
+                    <div class="contents">
+                        <ul class="lists">
+                            <li class="items">
+                                <a href="../home.html" class="nav-link">
+                                    <img src="../icons/home-regular-24.png" class="icons" alt="home">
+                                    <span class="link">Home</span>
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="../HTML/Research.html" class="nav-link">
+                                    <img src="../icons/search-alt-regular-24.png" class="icons" alt="user">
+                                    <span class="link">Research</span>
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="../HTML/Blog.html" class="nav-link">
+                                    <img src="../icons/chat-regular-24.png" class="icons" alt="blog">
+                                    <span class="link">Blog</span>
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="../HTML/product.html" class="nav-link">
+                                    <img src="../icons/shopping-bag-regular-24.png" class="icons" alt="products">
+                                    <span class="link">Products</span>
+                                </a>
+                            </li>
+                            <li class="items">
+                                <a href="../HTML/AboutUs.html" class="nav-link">
+                                    <img src="../icons/info-circle-regular-24.png" class="icons" alt="info">
+                                    <span class="link">About Us</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <section id="des" class="section-p1">
+            <div class="dimg">
+                <img src="../images/Product Page/watch4.avif" width="100%" alt="watch9">
+            </div>
+            
+            <div class="details">
+                <h2>Datejust 41</h2>
+                <h5>Oyster, 41 mm, Oystersteel and white gold</h5>
+                <div class=d2><h4>$47,00,000</h4> <h3>$16,000</h3></div>
+                <h3>DETAILS</h3>
+                <span>This Oyster Perpetual Datejust 41 in Oystersteel and white gold features a bright blue dial and an Oyster bracelet.<br>
+                    Oyster architecture: Monobloc middle case, screw-down case back and winding crown <br>
+                    
+                    Diameter:41 mm <br>
+                    
+                    Material: White Rolesor - combination of Oystersteel and white gold <br>
+                    
+                    Bezel: Fluted <br>
+                    
+                    Winding crown: Screw-down, Twinlock double waterproofness system<br>
+                    
+                    Crystal: Scratch-resistant sapphire, Cyclops lens over the date<br>
+                    
+                    Water resistance: Waterproof to 100 metres / 330 feet <br>
+                </span>
+            
+            <br>
+            <br>
+            <br>
+            <input type="number" value="1" min="1" max="10">
+            <button type="submit" class="work" onclick="openPopup()">🛒Add To Cart</button>
+<div class="popup" id="popup">
+    <button type="button" onclick="closePopup()">x</button>
+    <p><img src="icons/shopping-bag-regular-24.png">  Added to cart!</p> 
+</div>
+<br> 
+<br>
+</div>
+</section>
+
+<!--Footer-->
+<section id="footer">
+    <div class="footer">
+        <div class="footer-section">
+            <div class="footer-about">
+                <h3>Watch</h3>
+                <p>A watch shop is a specialized retail store that offers a variety of timepieces, ranging from
+                     classic and luxury watches to modern smartwatches.
+                     It often provides additional services like watch repairs
+                    , battery replacements, and strap customizations, catering to both functionality and style.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/instagram-logo-24.png" class="icons" alt="logo">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/facebook-circle-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/whatsapp-square-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/youtube-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+
+                </ul>
+                <br><br><br>
+                <h3>Contact Us</h3>
+                <p>Phone number:+977 000-0000000</p>
+                <p>Email:CustomerService@gmail.com</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Email Sign Up</h3>
+                <p>Sign up for early access to new collections and special sales</p>
+                <form>
+                    <div class="submit">
+                    <input class="EmailSubmit" type="text" placeholder="Email Address" required>
+                    <button class="button">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            COPYRIGHT &copy; 2025 GROUP LTD.
+        </div>
+    </div>
+</section>
+
+<script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+
+</script>
+<script src="../JS/myscript.js"></script>
+</body>
+</html>

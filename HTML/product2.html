@@ -1,0 +1,425 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Product Page</title>
+    
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <style>
+        
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+   
+}
+
+h2{
+    font-size: 40px;
+    line-height:54px;
+}
+    
+
+h3 {
+    font-size: 33px;
+    line-height: 34px;
+   
+
+}
+
+h4{
+    font-size: 26px;
+    line-height:24px;
+   
+}
+
+h5{
+    font-size: 20px;
+    line-height:18px;
+}
+
+h6{
+    font-size: 12px;
+}
+
+p{
+    font-size:18px;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding:40px 80px;
+}
+
+.section-m1{
+    margin: 30px 0;
+}
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/*Product*/
+.section-p1{
+    margin-top: 70px;
+}
+#product1 .product{
+    column-gap: 5px;
+    display:flex;
+    justify-content: space-around;
+    padding:30px;
+    flex-wrap:wrap;
+}
+#product1 .pd{
+    width: 25%;
+    height: 45%;
+    min-height: 500px;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid gray;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+}
+
+#product1 h2{
+    text-align: center;
+    color: rgb(252, 205, 213);;
+    background-color:black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 90px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+#product1 p{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+#product1 .pd:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    border: 1px solid pink;
+
+}
+
+#product1 .pd img{
+    width:250px;
+    height: 350px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#product1 .pd .description h4{
+    padding-top: 10px;
+    color:rgb(235, 141, 157);
+    
+    
+
+}
+ #product1 .pd.description span{
+    text-align: start;
+ }
+
+
+#product1 .pd .description h5{
+   text-align: start;
+}
+
+
+
+
+#product1 .pd .ds{
+   color:rgb(225, 120, 138);
+   width: 70px;
+   height: 30px;
+   line-height:30px;
+   border-radius: 10%;
+   background-color: rgb(252, 205, 213);
+   font-weight: 500;
+   position:absolute;
+   bottom:20px;
+   right:40px;
+   text-align: center;
+   text-decoration: none;
+}
+
+   /*Discount Item*/
+
+
+.discount h4{
+    text-decoration: line-through;
+    opacity: 50%;
+    font-size: 20px;
+   
+}
+
+.discount h3{
+    padding-top: 10px;
+    color:rgb(235, 141, 157);
+    padding: none;
+}
+
+/*Out Of Stock Item*/
+
+.stock h6{
+    color:red;
+    font-size: 20px;
+}
+
+
+
+/*discount description*/
+
+.details .d2 h4{
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+.details .d2 h3{
+    color:rgb(225, 120, 138);
+}
+
+/*arrow*/
+
+#arrow img{
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+    <nav>
+        <!--The Logo-->
+        <div class="logo">
+            <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+            <img class="img" src="../norbu.jpg" alt="logo">
+            <span class="logoName">Norbu Watches</span>
+        </div>
+
+        <!--SearchBox-->
+        <div>
+            <form>
+                <div class="search">
+                    <img src="../icons/search-regular-24.png" alt="search">
+                    <input class="search-input" type="search" placeholder="Search items">
+                </div>
+            </form>
+        </div>
+
+
+        <!--SideBar-->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+            <img class="img" src="../norbu.jpg" alt="logo">
+            <span class="logoName">Norbu Watches</span>
+            </div>
+
+            <div class="contents">
+                <ul class="lists">
+                    <li class="items">
+                        <a href="../home.html" class="nav-link">
+                            <img src="../icons/home-regular-24.png" class="icons" alt="home">
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/Research.html" class="nav-link">
+                            <img src="../icons/search-alt-regular-24.png" class="icons" alt="user">
+                            <span class="link">Research</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/Blog.html" class="nav-link">
+                            <img src="../icons/chat-regular-24.png" class="icons" alt="blog">
+                            <span class="link">Blog</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/product.html" class="nav-link">
+                            <img src="../icons/shopping-bag-regular-24.png" class="icons" alt="products">
+                            <span class="link">Products</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/AboutUs.html" class="nav-link">
+                            <img src="../icons/info-circle-regular-24.png" class="icons" alt="info">
+                            <span class="link">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+
+              
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    <!--the overlay is basically the whole screen when the sidebar is open 
+    but the overlay doesn't include the sidebar-->
+<!--Product-->
+
+<!--Smart Watch-->
+
+<section id="product1" class="section-p1">
+    <h2>Smart Watch</h2>
+    <p> Recommended For You </p>
+    <div class="product">
+        <div class="pd">
+                <img src="../images/Product Page/watch10.webp" alt="watch">
+                <div class="description">
+                    <span>Smart Watch</span>
+                    <h5> SM01 </h5>
+                    <br>
+                    <h4>$28,000</h4>
+                </div>
+                <div class=ds>Details</div>
+                
+        </div>
+    
+        <div class="pd">
+            <img src="../images/Product Page/watch23.jpg" width="200px" height="200px" alt="watch">
+            <div class="description">
+                <span>Smart Watch</span>
+                <h5> SM02 </h5>
+        <div class="discount">
+                <h4>$33,200</h4>
+                <h3>$16,160</h3>
+            </div>
+            <div class=ds>Details</div>
+        </div>
+            
+    </div>
+
+    <div class="pd">
+        <img src="../images/Product Page/watch19.webp" width="200px" height="200px" alt="watch">
+        <div class="description">
+            <span>Smart Watch</span>
+            <h5> SM03</h5>
+            <br>
+            <h4>$38,000</h4>
+    <div class="stock">
+            <h6>Out Of Stock</h6>
+        </div>
+        <div class=ds>Details</div>
+    </div>
+        
+</div>
+
+<div class="pd">
+    <img src="../images/Product Page/watch20.jpg" width="200px" height="200px" alt="watch">
+    <div class="description">
+        <span>Smart Watch </span>
+        <h5> SM04 </h5>
+        <br>
+        <div class="stock">
+                <h6>Out Of Stock</h6>
+                <div class=ds>Details</div>
+            </div>
+        </div> 
+</div>
+
+<div class="pd">
+    <img src="../images/Product Page/watch21.webp" width="200px" height="200px" alt="watch">
+    <div class="description">
+        <span>Smart Watch </span>
+        <h5> SM05 </h5>
+        <br>
+        <h4>$45,000</h4>
+    </div>
+    <div class=ds>Details</div>
+    
+</div>
+
+<div class="pd">
+    <img src="../images/Product Page/watch22.webp" width="200px" height="200px" alt="watch">
+    <div class="description">
+        <span>Smart Watch </span>
+        <h5> SM06 </h5>
+    <div class="discount">
+            <h4>$40,000</h4>
+            <h3>$34,000</h3>
+        </div>
+        <div class=ds>Details</div>
+    </div>
+        
+</div>
+
+</div>
+</section>
+
+<div id="arrow" onclick="window.location.href='product.html';">
+    <img src="../icons/left-arrow-alt-solid-24.png" alt="arrow" width="30px" height="30px">
+</a>
+</div>
+
+<!--Footer-->
+<section id="footer">
+    <div class="footer">
+        <div class="footer-section">
+            <div class="footer-about">
+                <h3>Watch</h3>
+                <p>A watch shop is a specialized retail store that offers a variety of timepieces, ranging from
+                     classic and luxury watches to modern smartwatches.
+                     It often provides additional services like watch repairs
+                    , battery replacements, and strap customizations, catering to both functionality and style.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/instagram-logo-24.png" class="icons" alt="logo">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/facebook-circle-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/whatsapp-square-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/youtube-logo-24.png" class="icons" alt="logo">
+                        </a>
+                    </li>
+
+                </ul>
+                <br><br><br>
+                <h3>Contact Us</h3>
+                <p>Phone number:+977 000-0000000</p>
+                <p>Email:CustomerService@gmail.com</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Email Sign Up</h3>
+                <p>Sign up for early access to new collections and special sales</p>
+                <form>
+                    <div class="submit">
+                    <input class="EmailSubmit" type="text" placeholder="Email Address" required>
+                    <button class="button">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            COPYRIGHT &copy; 2025 GROUP LTD.
+        </div>
+    </div>
+</section>
+<script src="../JS/myscript.js"></script>
+</body>
+</html>

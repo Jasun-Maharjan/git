@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <style>
+        body {
+            background: #303a5e;
+
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 20px auto;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(19, 18, 18, 0.1);
+        }
+
+        .header {
+            display: flex;
+            background-color: #323131;
+            color: #fff;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 30%;
+            background: #2c3E50;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            color: #f1c40f;
+        }
+
+        .sidebar p,
+        .sidebar ul li {
+            margin: 10px 0;
+            color: #ecf0f1;
+        }
+
+        .main {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #344d66;
+            text-transform: uppercase;
+            border-bottom: 3px solid #158ac9;
+            padding-bottom: 6px;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            margin-bottom: 10px;
+        }
+
+        .about-me {
+            margin-bottom: 20px;
+        }
+
+        .about-me p {
+            color: #7f8c8d;
+        }
+
+        .education ul,
+        .certificates ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education ul li,
+        .certificates ul li {
+            margin-bottom: 15px;
+        }
+
+        .education strong,
+        .certificates strong {
+            color: #1886cf;
+            font-size: 16px;
+        }
+
+        .education em,
+        .certificates em {
+            color: #818f90;
+        }
+
+        .btn a {
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+            border: 1px solid black;
+            background-color: #323131;
+            margin-left: 10px;
+            border-radius: 20px;
+            padding: 12px;
+            transition: all 0.3s ease;
+
+        }
+
+        .btn a:hover {
+            color: #323131;
+            background-color: white;
+        }
+    </style>
+
+<body>
+    <div class="btn" style="margin-top:100px">
+        <a href="../HTML/AboutUs.html">Back</a>
+    </div>
+
+    <nav>
+        <!--The Logo-->
+        <div class="logo">
+            <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+            <img class="img" src="../norbu.jpg" alt="logo">
+            <span class="logoName">Norbu Watches</span>
+        </div>
+
+        <!--SearchBox-->
+        <div>
+            <form>
+                <div class="search">
+                    <img src="../icons/search-regular-24.png" alt="search">
+                    <input class="search-input" type="search" placeholder="Search items">
+                </div>
+            </form>
+        </div>
+
+
+        <!--SideBar-->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon">
+                <img class="img" src="../norbu.jpg" alt="logo">
+                <span class="logoName">Norbu Watches</span>
+            </div>
+
+            <div class="contents">
+                <ul class="lists">
+                    <li class="items">
+                        <a href="../home.html" class="nav-link">
+                            <img src="../icons/home-regular-24.png" class="icons" alt="home">
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/Research.html" class="nav-link">
+                            <img src="../icons/search-alt-regular-24.png" class="icons" alt="user">
+                            <span class="link">Research</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/Blog.html" class="nav-link">
+                            <img src="../icons/chat-regular-24.png" class="icons" alt="blog">
+                            <span class="link">Blog</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/product.html" class="nav-link">
+                            <img src="../icons/shopping-bag-regular-24.png" class="icons" alt="products">
+                            <span class="link">Products</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../HTML/AboutUs.html" class="nav-link">
+                            <img src="../icons/info-circle-regular-24.png" class="icons" alt="info">
+                            <span class="link">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <section class="overlay"></section>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <img src="../images/CV/Ellie.jpg" alt="profile">
+            <div>
+                <h1>Ellie Shrestha</h1>
+                <p>Student.</p>
+            </div>
+        </div>
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="section contact">
+                    <h2 style="color: aliceblue;"><b>PROFILE</b></h2>
+                    <p>Computing student. I am someone who is empathetic and seeks authenticity with integrity I am
+                        looking forward for my first work Experience .</p>
+
+                </div>
+                <div class="section contact">
+                    <h2 style="color: aliceblue;">Contact Details</h2>
+                    <p>Email: ellieshrestha02@gmail.com</p>
+                    <p>Phone: +977 9803463631</p>
+                    <p>Location: Anamnagar, Siddhartha Marg, Kathmandu.</p>
+                </div>
+
+
+                <div class="section language">
+                    <h2 style=" color: aliceblue;"><b>LANGUAGE</b></h2>
+                    <p>-English</p>
+                    <p>-Nepali</p>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main">
+                <div class="section summary">
+                    <h2><b>SUMMARY</b></h2>
+                    <p>As a student with a strong interest in Information Technology, I am eager to learn new
+                        technologies and continously expand my knowledge. I am motivated, curious, and passionate about
+                        exploring IT solurions. I enjoy problem-sloving and applying my skills to real-world challenges,
+                        and I am always looking for opprtunities to grow and develp in the field.</p>
+                </div>
+                <div class="section education">
+                    <h2><b>Education</b></h2>
+                    <p><b>GYATRI VIDYA PEETH</b></p>
+                    <P>Completed Grade-10, batch-2076</P>
+                    <p><b>PREMIER INT'L IB WORLD SCHOOL</b></p>
+                    <P>graduated highschool, batch-2022 AD</P>
+                    <p><b>currently studing:- Bsc(Hons) computing at Islington.</b></p>
+                </div>
+                <div class="section skills">
+                    <h2><b>Schools Skills</b></h2>
+                    <p>Co-founder of "KENNEL FOR ME" Management member for the school's carnivals </p>
+                    <p>Active on spellling bees, poem Writing and recitations.</p>
+
+
+                    <div class="section experience">
+                        <h2><B>VOLUNTEER EXPERIENCE</B></h2>
+                        <p>6-months internship at D-Town(Japa, Damak), Member of Rotary Club , Did rallys for spiritual
+                            assocition such as, Brahma Kumari Center, Took 2 year gap.</p>
+                    </div>
+
+                    <div class="section References">
+                        <h2><b>References</b></h2>
+                        <p>"References avaliable upon request."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../js/myscript.js"></script>
+</body>
+
+</html>

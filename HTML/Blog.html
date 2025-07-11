@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/Style.css" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog Page">
+    <meta name="keywords" content="../html, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /*Slider CSS*/
+        .slider {
+            width: 1200px;
+            height: 780px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .slides {
+            width: 500%;
+            height: 780px;
+            display: flex;
+        }
+
+        .slides input {
+            display: none;
+        }
+
+        .slide {
+            width: 20%;
+            transition: 2s;
+            position: relative;
+        }
+
+        .slide img {
+            width: 1200px;
+            height: 780px;
+            margin: auto;
+        }
+
+        /*Manual navigation through silder*/
+        .nav-manual {
+            position: absolute;
+            width: 1200px;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .manual-btn {
+            border: 2px solid #e3f2fd;
+            padding: 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 1s;
+            margin-right: 40px;
+        }
+
+
+        .manual-btn:hover {
+            background: #e3f2fd;
+        }
+
+        #radio1:checked~.first {
+            margin-left: 0;
+        }
+
+        #radio2:checked~.first {
+            margin-left: -20%;
+        }
+
+        #radio3:checked~.first {
+            margin-left: -40%;
+        }
+
+        #radio4:checked~.first {
+            margin-left: -60%;
+        }
+
+        .slidelink {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        .slidelink:hover {
+            opacity: 1;
+        }
+
+        .slidelink h1 {
+            color: grey;
+        }
+
+        /*Blog Section*/
+        .blog {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-bottom: 10px;
+        }
+
+        .blog-heading h3 {
+            font-size: 38px;
+            color: #000;
+            font-weight: 800;
+        }
+
+        .blog-cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .blog-box {
+            width: 600px;
+            background-color: #fff;
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .blog-text {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-text .blog-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #272727;
+            transition: all 0.5s ease;
+        }
+
+        .blog-text .blog-title:hover {
+            color: lightblue;
+        }
+
+        .blog-text p {
+            color: #555;
+            font-size: 14px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .blog-link {
+            color: #000;
+            transition: all 0.5s ease;
+        }
+
+        .blog-link:hover {
+            color: lightblue;
+        }
+
+        /*To make the blog box responsive*/
+        @media (max-width: 1250px) {
+            .blog-box {
+                width: 300px;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            .blog-box {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .blog-box {
+                margin: 20px 10px;
+                width: 100%;
+            }
+
+            .blog {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!--The Logo-->
+        <div class="logo">
+            <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon" />
+            <img class="img" src="../norbu.jpg" alt="logo" />
+            <span class="logoName">Norbu Watches</span>
+        </div>
+
+        <!--SearchBox-->
+        <div>
+            <form>
+                <div class="search">
+                    <img src="../icons/search-regular-24.png" alt="search" />
+                    <input class="search-input" type="search" placeholder="Search items" />
+                </div>
+            </form>
+        </div>
+
+        <!--SideBar-->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="../icons/menu-regular-24.png" alt="menu" class="menu_icon" />
+                <span class="logoName">Norbu Watches</span>
+            </div>
+
+            <div class="contents">
+                <ul class="lists">
+                    <li class="items">
+                        <a href="../home.html" class="nav-link">
+                            <img src="../icons/home-regular-24.png" class="icons" alt="home" />
+                            <span class="link">Home</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/Research./html" class="nav-link">
+                            <img src="../icons/search-alt-regular-24.png" class="icons" alt="user" />
+                            <span class="link">Research</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/Blog.html" class="nav-link">
+                            <img src="../icons/chat-regular-24.png" class="icons" alt="blog" />
+                            <span class="link">Blog</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/product.html" class="nav-link">
+                            <img src="../icons/shopping-bag-regular-24.png" class="icons" alt="products" />
+                            <span class="link">Products</span>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="../html/AboutUs.html" class="nav-link">
+                            <img src="../icons/info-circle-regular-24.png" class="icons" alt="info" />
+                            <span class="link">About Us</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="overlay"></section>
+    <!--the overlay is basically the whole screen when the sidebar is open 
+    but the overlay doesn't include the sidebar-->
+
+    <!--Blog Section-->
+    <section class="blog">
+        <!--HEADINGGGGG-->
+        <div class="blog-heading">
+            <h3>Blog Page</h3>
+        </div>
+        <!--Slider-->
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="btn" id="radio1" />
+                <input type="radio" name="btn" id="radio2" />
+                <input type="radio" name="btn" id="radio3" />
+                <input type="radio" name="btn" id="radio4" />
+
+                <div class="slide first" id="image">
+                    <a href="https://blog.kataphrakt.watch/impact-technology-watchmaking-mens-watches/">
+                        <img src="../images/Blog/IMG_0056.jpg" alt="img" />
+                        <div class="slidelink">
+                            <h1>Impact of Technology on Watchmaking and Mens Watches</h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide" id="image">
+                    <a
+                        href="https://www.ey.com/en_ch/insights/digital/how-is-digital-technology-disrupting-the-timepiece-customer-journey">
+                        <img src="../images/Blog/ey-close-up-mechanical-watch-hero.webp" alt="img" />
+                        <div class="slidelink">
+                            <h1>
+                                How is digital technology disrupting the timepiece customer
+                                journey?
+                            </h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide" id="image">
+                    <a
+                        href="https://fonacc.com/blogs/fonacc-blogs/5-impacts-of-smart-watch-amp-wearable-technology-on-daily-life?srsltid=AfmBOopqVKMisRJK9-zR7M9Ww7bNvS9ipMJ9NH1SgZH49HlcE7kWiNSP">
+                        <img src="../images/Blog/Smart_Watch_Wearable_Technology_on_Daily_Life.webp" alt="img" />
+                        <div class="slidelink">
+                            <h1>
+                                5 Impacts of Smart Watch & Wearable Technology on Daily Life
+                            </h1>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide" id="image">
+                    <a
+                        href="https://www.h2hubwatches.com/blogs/reviews/the-impact-of-smartwatches-on-modern-life?srsltid=AfmBOopHyPfam5UrtMpfYvNu4kFFjc-Oe9MDwPgvA8nJQN7lZ-RdTdMu">
+                        <img src="../images/Blog/The_Impact_of_Smartwatches_on_Modern_Life.webp" alt="img" />
+                        <div class="slidelink">
+                            <h1>The Impact of Smartwatches on Modern Life</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        <!--Blog Cards-->
+        <p style="
+          font-size: 32px;
+          font-weight: 800;
+          color: #555;
+          margin-top: 40px;
+          text-align: center;
+        ">
+            My recent posts
+        </p>
+        <div class="blog-cards">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="../images/Blog/image-579.jpeg" alt="picture" />
+                </div>
+
+                <div class="blog-text">
+                    <a href="../HTML/Blog1.html" class="blog-title">The Impact of Technology on the Watch industry and
+                        consumer
+                        trends.</a>
+                    <p>
+                        We all keep on loosing track of time. Yet, somehow we get back on track.
+                        All thanks to new technologies. As time passes by, so does trends. ...
+                    </p>
+                    <a href="../HTML/Blog1.html" class="blog-link">Read More</a>
+                </div>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="../images/Blog/apple-watch-stocks-app-watchos-10.webp" alt="picture" />
+                </div>
+
+                <div class="blog-text">
+                    <a href="../html/Blog2.html" class="blog-title">How Technology plays a Vital role in watch designs
+                        and watch
+                        sales</a>
+                    <p>
+                        Watches are ancient accessory that was first introduced during 15th century by Peter Henlein but
+                        as time has passed, and
+                        like every other thing that has advanced, watches have advanced too and now we can get
+                        smartwatches that are
+                        able to make phone calls, which n...
+                    </p>
+                    <a href="../html/Blog2.html" class="blog-link">Read More</a>
+                </div>
+            </div><br><br>
+
+            <div class="conclusion" style="background-color: #fff;padding-top: 10px;width:60%; padding-bottom: 20px;">
+                <p style="
+                    font-size: 32px;
+                    font-weight: 800;
+                    color: #555;
+                    margin: 10px;
+                    text-align: center;
+                ">
+                    Conclusion
+                </p>
+                <div class="text" style="margin-left:10%">
+                    <p style="font-size: 24px; color: #000; text-align: center; width:800px;">
+                        Watches has come a long way. In 15th century, the watches couldnt even be worn but now
+                        we can make phone calls as well as do various tasks like clicking picture, recording voices,
+                        measuring heartbeat
+                        and measuring fat burned too. The technology has affected watches greatly, traditionally,
+                        watches
+                        were made
+                        to only measure time but now not only can watches measure time and date, it can measure your
+                        health
+                        condition and
+                        do things that no onw could have thought of
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-section">
+            <div class="footer-about">
+                <h3>Norbu Watches</h3>
+                <p>Norbu, which means gems in tibetan language, tries the best to offer their customers and investors
+                    the best quality and comfort in terms of investing, options and shopping. </p>
+            </div>
+            <div class="footer-links">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/instagram-logo-24.png" class="icons" alt="logo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/facebook-circle-logo-24.png" class="icons" alt="logo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/whatsapp-square-logo-24.png" class="icons" alt="logo" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../icons/youtube-logo-24.png" class="icons" alt="logo" />
+                        </a>
+                    </li>
+                </ul>
+                <br /><br /><br />
+                <h3>Contact Us</h3>
+                <p>Phone number:+977 000-0000000</p>
+                <p>Email:CustomerService@gmail.com</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Email Sign Up</h3>
+                <p>Sign up for early access to new collections and special sales</p>
+                <form>
+                    <div class="submit">
+                        <input class="EmailSubmit" type="text" placeholder="Email Address" required />
+                        <button class="button">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">COPYRIGHT &copy; 2025 GROUP LTD.</div>
+    </div>
+    <!--JS for sidebar-->
+    <script src="../JS/myscript.js"></script>
+</body>
+
+</html>
